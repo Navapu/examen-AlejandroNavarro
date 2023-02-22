@@ -7,7 +7,7 @@
     <title>Subir una foto</title>
 </head>
 <body>
-    {{!-- <div class="row"> --}}
+    <div class="container p-5 m-3">
         <form action="/anadir" method="POST">
             <div class="form-group">
                 <label>Titulo de la foto</label>
@@ -25,8 +25,9 @@
                 <label>URL de la imagen</label>
                 <input type="text" placeholder="Imagen" name="imagen">
             </div>
-                <button type="submit" class="btn btn-success">Subir</button>
+                <button type="submit" class="btn btn-success m-3">Subir</button>
             </form>
-            {{!-- </div> --}}
+            <a href="/" class="">Quieres volver a atras?</a>
+            </div>
 </body>
 </html>

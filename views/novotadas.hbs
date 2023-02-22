@@ -1,0 +1,20 @@
+<h1>Deseas volver?</h1>
+<a href="/fotos" class="btn btn-primary">Volver</a>
+<div class="container p-4">
+    <div class="row">
+        {{#each imagen}}
+            <div class="col-md-5">
+                <div class="card text-center p-2 bd-highlight">
+                            <h3>
+                                {{titulo}}
+                            </h3>
+                            </a>
+                            <p class="m-2">{{descripcion}}</p>
+                            <p class="m-2">{{fecha}}</p>
+                            <img src="{{imagen}}" alt="">
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

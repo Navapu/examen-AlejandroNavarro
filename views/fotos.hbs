@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<h1>
-    Quieres añadir una foto?
-</h1>
+    <h3>Quieres añadir una foto?</h3>
 <a href="/anadir" class="btn btn-primary m-2">Subir foto</a>
-<div class="container p-4">
+<h3>Quieres ver las fotos mas votadas?</h3>
+<a href="/fotos/votadas" class="btn btn-primary m-2">Ver fotos mas votadas</a>
+<h3>Quieres ver las fotos menos votadas?</h3>
+<a href="/fotos/novotadas" class="btn btn-primary m-2">Ver fotos menos votadas</a>
+<div class="container p-4 md-3">
     <div class="row">
         {{#each imagen}}
             <div class="col-md-5">

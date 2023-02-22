@@ -65,4 +65,12 @@ router.post('/fotos/edit/:id', async (req, res) => {
     console.log(imagen)
     res.render('dislike.hbs', {imagen:imagen[0]})
 })
+router.get('/fotos/votadas', async (req, res) => {
+    const [imagen] = await pool.query('SELECT * FROM img ORDER BY megusta DESC LIMIT 3')
+    res.render('votadas.hbs', {imagen})
+})
+router.get('/fotos/novotadas', async (req, res) => {
+    const [imagen] = await pool.query('SELECT * FROM img ORDER BY megusta ASC LIMIT 3')
+    res.render('novotadas.hbs', {imagen})
+})
 module.exports = router
