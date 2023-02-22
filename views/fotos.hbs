@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+    Quieres añadir una foto?
+</h1>
+<a href="/anadir" class="btn btn-primary m-2">Subir foto</a>
+<div class="container p-4">
+    <div class="row">
+        {{#each imagen}}
+            <div class="col-md-5">
+                <div class="card text-center p-2 bd-highlight">
+                            <h3>
+                                {{titulo}}
+                            </h3>
+                            </a>
+                            <p class="m-2">{{descripcion}}</p>
+                            <p class="m-2">{{fecha}}</p>
+                            <img src="{{imagen}}" alt="">
+                            <a href="/fotos/like/{{id}}" class="btn btn-success m-2">Like</a>
+                            <a href="/fotos/dislike/{{id}}" class="btn btn-danger m-2">Dislike</a>
+                            <a href="/fotos/delete/{{id}}" class="btn btn-danger m-2">Borrar</a>
+                            <a href="/fotos/edit/{{id}}" class="btn btn-secondary m-2">Editar</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+</body>
+</html>
