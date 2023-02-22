@@ -7,12 +7,25 @@
     <title>Subir una foto</title>
 </head>
 <body>
-    <form action="/anadir" method="POST">
-        <input type="text" placeholder="Titulo" name="titulo">
-        <input type="text" placeholder="Descripcion" name="descripcion">
-        <input type="date" placeholder="Fecha" name="fecha">
-        <input type="text" placeholder="Imagen" name="imagen">
-        <button type="submit">Subir</button>
-    </form>
+    <div class="row">
+        <form action="/anadir" method="POST">
+            <div class="form-group">
+                <label>Titulo de la foto</label>
+                <input type="text" placeholder="Titulo" name="titulo">
+            </div>
+            <div class="form-group">
+                <label>Descripcion</label>
+                <input type="text" placeholder="Descripcion" name="descripcion">
+            </div>
+            <div class="form-group">
+                <label>Fecha de la foto</label>
+                <input type="date" placeholder="Fecha" name="fecha">
+            </div>
+            <div class="form-group">
+                <label>URL de la imagen</label>
+                <input type="text" placeholder="Imagen" name="imagen">
+            </div>
+                <button type="submit" class="btn btn-success">Subir</button>
+            </form></div>
 </body>
 </html>
