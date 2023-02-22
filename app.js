@@ -12,7 +12,9 @@ app.engine('.hbs', engine({
   helpers: require('./lib/handlebars')
 }))
 app.set('view engine', '.hbs');
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }))
+app.use(express.static(path.join(__dirname, 'public')));
+
 const indexRouter = require('./routes/index')
 app.listen(3000)
 console.log('Escuchando en el puerto 3000')
